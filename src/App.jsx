@@ -4,6 +4,7 @@ import ContactList from "./Components/ContactList/ContactList";
 
 import "./App.css";
 import SearchBox from "./Components/SearchBox/SearchBox";
+import ContactForm from "./Components/ContactForm/ContactForm";
 
 function App() {
   const [contacts, setContacts] = useState([
@@ -30,7 +31,7 @@ function App() {
   return (
     <div>
       <h1>Phonebook</h1>
-      {/* <ContactForm /> */}
+      <ContactForm />
       <SearchBox changeFilter={changeFilter} filter={filter} />
       <ContactList contacts={filterContacts(contacts)} filter={filter} />
     </div>
