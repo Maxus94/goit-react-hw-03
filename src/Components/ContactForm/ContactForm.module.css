@@ -1,0 +1,32 @@
+.addForm {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 4px 8px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    max-width: 240px
+}
+
+.nameLabel {
+    display: block;
+}
+
+.numberLabel {
+    display: block;
+    margin-top: 8px;
+}
+
+.formInput {
+    display: block;
+    width: 100%;
+}
+
+.error {
+    color: red;
+}
+
+.addButton {
+    display: block;
+}
