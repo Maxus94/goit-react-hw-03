@@ -1,4 +1,5 @@
 import { useState } from "react";
+import css from "./SearchBox.module.css";
 
 const SearchBox = ({ changeFilter }) => {
   function handleChange(evt) {
@@ -6,9 +7,9 @@ const SearchBox = ({ changeFilter }) => {
   }
 
   return (
-    <label htmlFor="">
+    <label className={css.searchLabel} htmlFor="">
       Find contacts by name
-      <input onChange={handleChange} type="text" />
+      <input className={css.searchInput} onChange={handleChange} type="text" />
     </label>
   );
 };
